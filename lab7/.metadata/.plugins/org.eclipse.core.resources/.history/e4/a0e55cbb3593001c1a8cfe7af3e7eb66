@@ -1,0 +1,26 @@
+package com.cg.eis.pl;
+
+import java.util.Scanner;
+
+import com.cg.eis.bean.Employee;
+import com.cg.eis.service.EmployeeServiceImpl;
+
+public class EmployeeMain {
+
+	public static void main(String[] args) {
+		
+		
+		EmployeeServiceImpl esi=new EmployeeServiceImpl();
+		
+		 Employee emp1=new Employee(10,"Amit",25000,esi.setDesignation(),esi.setInsuranceScheme());
+		 Employee emp2=new Employee(5,"Bob",30000,esi.setDesignation(),);
+		 Employee emp3=new Employee(15,"Karthik",20000,esi.setDesignation(),);
+		 Employee emp4=new Employee(12,"Praveen",42000,esi.setDesignation(),);
+		
+		
+		
+		
+
+	}
+
+}

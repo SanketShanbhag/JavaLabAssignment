@@ -1,0 +1,6 @@
+package lambdaExpression;
+
+@FunctionalInterface
+public interface Ex1Interface {
+	int a(int x, int y);
+}

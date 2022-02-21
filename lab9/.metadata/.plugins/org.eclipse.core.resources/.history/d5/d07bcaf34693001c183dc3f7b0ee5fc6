@@ -1,0 +1,5 @@
+package caseStudy.repository;
+
+public class EmployeeRepository {
+
+}

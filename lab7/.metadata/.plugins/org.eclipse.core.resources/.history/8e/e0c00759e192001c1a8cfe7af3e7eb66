@@ -1,0 +1,35 @@
+package com.cg.eis.service;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.cg.eis.bean.Employee;
+
+public class EmployeeServiceImpl {
+	public static HashMap<Integer, Employee> empMap = new HashMap<Integer, Employee>();
+	   public static int c = 0;
+
+	   public void addEmployee(Employee emp) {
+	      empMap.put(emp.getId(), emp);
+	   }
+
+	   public boolean deleteEmployee(int id) {
+	      if (empMap.containsKey(id)) {
+	         empMap.remove(id);
+	         return true;
+	      }
+	      return false;
+	   }
+	   
+	   public String showEmpDetails(String InsuranceScheme) {
+		      for (Map.Entry<Integer, Employee> mapEntry : empMap.entrySet()) {
+		         Employee obj = ((Employee) mapEntry.getValue());
+		         if (InsuranceScheme.equals(obj.getInsuranceScheme(obj.getSalary()))) {
+		            return "Name: " + obj.getName() + " Id: " + obj.getId() + " Salary: " + obj.getSalary() + " Designation: "
+		                  + obj.getDesignation() + " InsuranceScheme: " +obj.getInsuranceScheme();
+		         }
+		      }
+		      return null;
+	   }
+
+}

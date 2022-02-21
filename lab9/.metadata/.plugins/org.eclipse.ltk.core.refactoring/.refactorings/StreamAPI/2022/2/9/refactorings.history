@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 4 elements from project &apos;StreamAPI&apos;&#x0D;&#x0A;- Original project: &apos;StreamAPI&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     StreamAPI/src/caseStudy.repository&#x0D;&#x0A;     caseStudy.repository.EmployeeRepository.java&#x0D;&#x0A;     StreamAPI/src/caseStudy.service&#x0D;&#x0A;     caseStudy.service.EmployeeService.java" description="Delete elements" element1="/src&lt;caseStudy.service" element2="/src&lt;caseStudy.repository" elements="2" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1645469348904" subPackages="false" version="1.0"/>
+</session>
